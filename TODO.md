@@ -1,0 +1,1 @@
+fix navbar not being gray on /projects

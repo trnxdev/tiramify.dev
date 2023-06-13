@@ -39,7 +39,7 @@ const navItems = [
   lis.forEach((li) => {
     const a = li.querySelector("a");
 
-    if (a?.href === window.location.href) {
+    if (a?.href == window.location.pathname) {
       a.classList.remove("text-white");
       a.classList.add("text-gray-400");
       a.classList.add("pointer-events-none");

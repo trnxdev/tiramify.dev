@@ -1,0 +1,48 @@
+---
+import Container from "./Container.astro";
+
+const navItems = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "Projects",
+    link: "/projects",
+  },
+];
+---
+
+<header
+  class="h-16 border-b-[1px] border-neutral-800 text-xl text-white bg-gray-800"
+>
+  <Container class="flex h-full items-center justify-around md:justify-between">
+    <a id="pseudo" class="text-2xl font-extrabold" href="/">tiramify</a>
+    <nav>
+      <ul class="flex space-x-4 p-4">
+        {
+          navItems.map((item) => (
+            <li>
+              <a href={item.link} class="text-white hover:text-gray-300">
+                {item.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </Container>
+</header>
+
+<script>
+  const lis = document.querySelectorAll("li");
+  lis.forEach((li) => {
+    const a = li.querySelector("a");
+
+    if (a?.href === window.location.href) {
+      a.classList.remove("text-white");
+      a.classList.add("text-gray-400");
+      a.classList.add("pointer-events-none");
+    }
+  });
+</script>

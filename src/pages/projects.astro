@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PCard from '../components/PCard.astro';
+---
+
+<Layout title="tiramify | projects">
+    <div class="w flex-col">
+        <div class="cards flex flex-row">
+            <PCard
+                projectName="Altron"
+                projectDescription="A bot to do surfing around the web for you."
+                projectLink="https://github.com/teamBehind/Altron"
+                projectImage="/altron.png"
+            />
+            <PCard
+                projectName="ServerTray"
+                projectDescription="Display your server status in your tray."
+                projectLink="https://github.com/TiranexDev/ServerTray"
+                projectImage="/serverTray.png"
+            />
+            <PCard
+                projectName="emojigg"
+                projectDescription="Emoji.gg API wrapper for Node.js."
+                projectLink="https://github.com/TiranexDev/emojigg"
+                projectImage="/emojigg-happy.png"
+            />
+        </div>
+        <div class="_shadow-lg mt-5 w-[50%]">
+            <div class="box text-center">
+                <h1 class="text-3xl">And more comming soon!</h1>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .cards:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .cards {
+        margin-left: 2rem;
+    }
+
+    @media (max-width: 1399px) {
+        .w {
+            width: 100%;
+        }
+
+        ._shadow-lg {
+            width: 100%;
+        }
+
+        ._shadow-lg .box {
+            padding: 1rem;
+        }
+    }
+</style>

@@ -1,10 +1,8 @@
 ---
-const { url, title, description, image } = {
-  // default values
+const { url, title, description } = {
   url: "https://tiramify.dev/",
   title: "tiramify",
-  description: "Welcome, I'm tiramify.",
-  image: "/banner.png",
+  description: "Welcome, I'm tiramify."
 };
 ---
 
@@ -21,3 +19,5 @@ const { url, title, description, image } = {
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content="/banner.png" />
+
+<meta name="description" content={description} />

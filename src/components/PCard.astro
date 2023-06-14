@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 export interface Props {
     projectName: string;
     projectDescription: string;
@@ -10,7 +12,7 @@ const { projectName, projectDescription, projectLink, projectImage } = Astro.pro
 
 <a class="card ml-8" href={projectLink}>
 <div class="max-w-sm rounded overflow-hidden _shadow-lg">
-    <img class="w-full" src={ projectImage } alt="Project Image">
+    <Image src={projectImage} class="w-full" alt="Project Image" />
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">{ projectName }</div>
       <p class="text-gray-400 text-base">

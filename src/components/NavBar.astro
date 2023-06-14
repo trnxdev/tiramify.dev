@@ -17,13 +17,13 @@ const navItems = [
   class="h-16 border-b-[1px] border-neutral-800 text-xl text-white bg-gray-800"
 >
   <Container class="flex h-full items-center justify-around md:justify-between">
-    <a id="pseudo" class="text-2xl font-extrabold" href="/">tiramify</a>
+    <a aria-label="Brand which Links to home page" href="/" id="pseudo" class="text-2xl font-extrabold">tiramify</a>
     <nav>
       <ul class="flex space-x-4 p-4">
         {
           navItems.map((item) => (
             <li>
-              <a href={item.link} class="text-white hover:text-gray-300">
+              <a aria-label={`Navbar Link to ${item.name}`} href={item.link} class="text-white hover:text-gray-300">
                 {item.name}
               </a>
             </li>

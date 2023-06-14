@@ -10,7 +10,7 @@ export interface Props {
 const { projectName, projectDescription, projectLink, projectImage } = Astro.props;
 ---
 
-<a class="card ml-8" href={projectLink}>
+<a aria-label={`Link to project "${projectName}"`} href={projectLink} class="card ml-8">
 <div class="max-w-sm rounded overflow-hidden _shadow-lg">
     <Image src={projectImage} class="w-full" width="256" height="256" alt="Project Image" />
     <div class="px-6 py-4">

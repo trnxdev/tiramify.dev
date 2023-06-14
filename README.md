@@ -5,5 +5,6 @@
   </tr>
 </table>
 
-<h2>Source code for my <a href="htttps://tiramify.dev">personal website</a></h2>
-<sub>Heavily inspired by <a href="https://github.com/xHyroM/website">xHyro's Website</a></sub>
+<div align="center">
+<h2 align="center">Source code for my <a href="htttps://tiramify.dev">personal website</a></h2>
+<sub>Heavily inspired by <a href="https://github.com/xHyroM/website">xHyro's Website</a></sub></div>
